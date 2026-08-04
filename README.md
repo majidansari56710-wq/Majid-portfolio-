@@ -13,7 +13,7 @@ I am a Class 11 student interested in Computer Science and Programming.
 - Majid Run 🎮
 - Personal Portfolio Website
 
-## My Goal
-My goal is to become a successful IT professional and create useful technology.
+## My dream 
+My dream is to become so successful that whenever my father or mother points at something they like, I can buy it for them without worrying about the price. Their happiness is my biggest dream. I will work hard, never give up, and achieve my goals to make my parents proud.
 
 Thanks for visiting my portfolio! 🚀
