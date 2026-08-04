@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: Complete Computer Science Notes - Majid Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-blue: #38bdf8;
+            --accent-purple: #a855f7;
+            --accent-green: #22c55e;
+            --accent-amber: #f59e0b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            line-height: 1.7; 
+            background-color: var(--bg-color); 
+            color: var(--text-main); 
+            padding: 20px; 
+        }
+
+        .container { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            background: rgba(30, 41, 59, 0.7); 
+            backdrop-filter: blur(12px);
+            padding: 35px; 
+            border-radius: 20px; 
+            border: 1px solid var(--border-color);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3); 
+        }
+
+        .nav-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .back-btn { 
+            color: var(--accent-blue); 
+            text-decoration: none; 
+            font-weight: 600; 
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+
+        .back-btn:hover { color: var(--text-main); transform: translateX(-3px); }
+
+        .print-btn { 
+            background: linear-gradient(135deg, var(--accent-green), #16a34a); 
+            color: white; 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 10px; 
+            font-weight: 700; 
+            cursor: pointer; 
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+            transition: transform 0.2s ease;
+        }
+
+        .print-btn:hover { transform: translateY(-2px); }
+
+        .main-title { 
+            font-size: 2.2rem; 
+            font-weight: 800; 
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px; 
+        }
+
+        .subtitle { color: var(--text-muted); margin-bottom: 30px; font-size: 1rem; }
+
+        .section-badge {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent-blue);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+
+        h2 { 
+            color: var(--text-main); 
+            font-size: 1.5rem; 
+            margin-top: 15px; 
+            margin-bottom: 15px; 
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        h3 { color: var(--accent-purple); font-size: 1.15rem; margin-top: 20px; margin-bottom: 10px; }
+
+        p { margin-bottom: 15px; color: #cbd5e1; font-size: 0.98rem; }
+
+        ul, ol { margin-left: 20px; margin-bottom: 20px; color: #cbd5e1; }
+        li { margin-bottom: 8px; }
+        strong { color: var(--text-main); }
+
+        /* Highlight Boxes */
+        .info-card {
+            background: rgba(15, 23, 42, 0.6);
+            border-left: 4px solid var(--accent-blue);
+            padding: 16px;
+            border-radius: 8px;
+            margin: 18px 0;
+            border-top: 1px solid var(--border-color);
+            border-right: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .ipo-box {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(168, 85, 247, 0.1));
+            border: 1px dashed var(--accent-blue);
+            padding: 15px;
+            border-radius: 12px;
+            margin: 15px 0;
+            font-weight: 700;
+            text-align: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* Modern Custom Table */
+        .table-container { overflow-x: auto; margin: 20px 0; }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            background: #0f172a; 
+            border-radius: 10px; 
+            overflow: hidden; 
+            border: 1px solid var(--border-color);
+        }
+        th, td { padding: 14px 16px; text-align: left; font-size: 0.92rem; }
+        th { background: rgba(56, 189, 248, 0.15); color: var(--accent-blue); font-weight: 700; }
+        tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+        tr:not(:last-child) { border-bottom: 1px solid var(--border-color); }
+
+        /* Q&A Accordion Style */
+        .qa-card {
+            background: #0f172a;
+            border: 1px solid var(--border-color);
+            padding: 14px 18px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .qa-card strong { color: var(--accent-amber); }
+
+        @media print {
+            body { background: white; color: black; }
+            .container { background: white; border: none; box-shadow: none; color: black; padding: 0; }
+            .print-btn, .back-btn { display: none; }
+            .main-title { -webkit-text-fill-color: black; }
+            table { background: white; color: black; border: 1px solid #ccc; }
+            th { background: #eee; color: black; }
+            .info-card, .qa-card { background: #f9f9f9; color: black; border: 1px solid #ddd; }
+            p, li, ul, ol { color: #222; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="nav-header">
+        <a href="index.html" class="back-btn">← Back to Portfolio</a>
+        <button onclick="window.print()" class="print-btn">🖨️ Save as PDF / Print</button>
+    </div>
+
+    <h1 class="main-title">Chapter 1: Computer Systems</h1>
+    <p class="subtitle">Complete Master Class Notes • Grade 11 Computer Science</p>
+
+    <!-- SECTION 1 -->
+    <span class="section-badge">Part 1</span>
+    <h2>Functional Units of a Computer</h2>
+    <p>A computer consists of <strong>four main functional units</strong> that work together synchronously to process data into information.</p>
+
+    <div class="ipo-box">
+        <span>1. Input Unit</span> ➔ 
+        <span>2. CPU (Processing)</span> ➔ 
+        <span>3. Output Unit</span> | 
+        <span>4. Memory Unit</span>
+    </div>
+
+    <h3>1. Input Unit</h3>
+    <p>Accepts raw data & instructions from users and translates them into machine-readable binary form before transferring them to the CPU.</p>
+    <ul>
+        <li><strong>Functions:</strong> Accepts data ➔ Converts to binary ➔ Sends to CPU.</li>
+        <li><strong>Examples:</strong> Keyboard, Mouse, Scanner, Microphone, Webcam, Joystick, Touch Screen.</li>
+    </ul>
+
+    <h3>2. Central Processing Unit (CPU)</h3>
+    <p>Known as the <strong>brain of the computer</strong> because it controls, regulates, and executes all operations.</p>
+    
+    <div class="info-card">
+        <h4>Core Components of CPU:</h4>
+        <p><strong>A. ALU (Arithmetic Logic Unit):</strong> Performs arithmetic operations (+, −, ×, ÷) and logical operations (>, <, =, AND, OR, NOT).</p>
+        <p><strong>B. Control Unit (CU):</strong> Acts as the supervisor. Manages data flow between CPU, memory, and I/O devices.</p>
+        <p><strong>C. Registers:</strong> High-speed internal CPU memory locations used to store temporary data and instructions during processing.</p>
+    </div>
+
+    <h3>3. Memory Unit</h3>
+    <p>Stores data, system instructions, and intermediate/final processing results.</p>
+
+    <h3>4. Output Unit</h3>
+    <p>Receives binary processed results from CPU and translates them into human-readable visual/audio formats.</p>
+    <ul>
+        <li><strong>Examples:</strong> Monitor, Printer, Speaker, Projector, Plotter.</li>
+    </ul>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr><th>Comparison Basis</th><th>ALU (Arithmetic Logic Unit)</th><th>CU (Control Unit)</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Primary Function</strong></td><td>Performs math & logic calculations</td><td>Controls system operations</td></tr>
+                <tr><td><strong>Operation Type</strong></td><td>Executes operations on data</td><td>Manages data & instruction flow</td></tr>
+                <tr><td><strong>Focus Area</strong></td><td>Data Processing</td><td>System Directing</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- SECTION 2 -->
+    <span class="section-badge">Part 2</span>
+    <h2>Memory, Hardware & Software</h2>
+
+    <h3>1. Memory Classification</h3>
+    <p>Memory is categorized into Primary (Main) and Secondary (Auxiliary) storage.</p>
+
+    <div class="info-card">
+        <p><strong>RAM (Random Access Memory):</strong> Volatile, high-speed, read/write memory storing active running applications. Data clears when powered off.</p>
+        <p><strong>ROM (Read Only Memory):</strong> Non-volatile, permanent memory containing startup (Booting) instructions (BIOS).</p>
+        <p><strong>Cache Memory:</strong> Ultra-fast, expensive memory situated near/inside the CPU to store frequently accessed data.</p>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr><th>Feature</th><th>RAM</th><th>ROM</th><th>Secondary Storage</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Permanence</strong></td><td>Temporary (Volatile)</td><td>Permanent (Non-Volatile)</td><td>Permanent (Non-Volatile)</td></tr>
+                <tr><td><strong>Speed</strong></td><td>Very High</td><td>Medium</td><td>Slower</td></tr>
+                <tr><td><strong>Capacity</strong></td><td>Limited</td><td>Small</td><td>Very Large</td></tr>
+                <tr><td><strong>Access Type</strong></td><td>Direct CPU Access</td><td>Direct CPU Access</td><td>Indirect Access</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>2. Hardware vs. Software</h3>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr><th>Hardware (Physical)</th><th>Software (Logical)</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Tangible physical components you can touch</td><td>Collection of programs & instructions</td></tr>
+                <tr><td>Examples: Keyboard, CPU Cabinet, SSD</td><td>Examples: Windows 11, MS Word, Chrome</td></tr>
+                <tr><td>May wear out over time physically</td><td>Does not physically wear out</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>3. Software Types</h3>
+    <ul>
+        <li><strong>System Software:</strong> Manages hardware and provides a base platform (e.g., Windows, Linux, macOS, Android).</li>
+        <li><strong>Application Software:</strong> Performs specific user tasks (e.g., MS Excel, Photoshop, VLC).</li>
+    </ul>
+
+    <!-- SECTION 3 -->
+    <span class="section-badge">Part 3</span>
+    <h2>Input, Output & Storage Deep Dive</h2>
+
+    <h3>Printers & Storage Comparison</h3>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr><th>Impact Printer (e.g., Dot Matrix)</th><th>Non-Impact Printer (e.g., Laser, Inkjet)</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Physical contact with paper</td><td>No physical contact with paper</td></tr>
+                <tr><td>Noisy & Slower</td><td>Quiet & Extremely Fast</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr><th>Feature</th><th>Hard Disk Drive (HDD)</th><th>Solid State Drive (SSD)</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Technology</strong></td><td>Magnetic Spinning Disks</td><td>Flash Memory Chips</td></tr>
+                <tr><td><strong>Speed</strong></td><td>Slower</td><td>Ultra Fast</td></tr>
+                <tr><td><strong>Durability</strong></td><td>Vulnerable to movement shock</td><td>Highly Durable (No moving parts)</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- EXAM & VIVA PREPARATION -->
+    <span class="section-badge">Exam Corner</span>
+    <h2>Important Viva & Exam Questions</h2>
+
+    <div class="qa-card">
+        <p><strong>Q1. Why is the CPU called the brain of the computer?</strong></p>
+        <p>Because it controls all hardware components, directs memory operations, and executes all logical & mathematical tasks.</p>
+    </div>
+
+    <div class="qa-card">
+        <p><strong>Q2. Why is SSD faster than HDD?</strong></p>
+        <p>SSD uses electronic microchips (Flash Memory) with no moving parts, whereas HDD relies on mechanical spinning platters.</p>
+    </div>
+
+    <div class="qa-card">
+        <p><strong>Q3. Mandatory Full Forms to Remember for Exams:</strong></p>
+        <p>• <strong>CPU:</strong> Central Processing Unit | • <strong>ALU:</strong> Arithmetic Logic Unit</p>
+        <p>• <strong>CU:</strong> Control Unit | • <strong>RAM:</strong> Random Access Memory | • <strong>ROM:</strong> Read Only Memory</p>
+    </div>
+
+</div>
+
+</body>
+</html>
