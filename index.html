@@ -1,115 +1,462 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Majid Ansari - Student, Web Developer, and AI Enthusiast from Nepal. Explore projects, skills, services, and contact information in this premium personal portfolio website."
-    />
-    <meta
-      name="keywords"
-      content="Majid Ansari, portfolio, Nepal, student, web developer, AI enthusiast, frontend developer"
-    />
-    <meta name="author" content="Majid Ansari" />
-    <meta name="theme-color" content="#0b1020" />
-    <meta property="og:title" content="Majid Ansari | Personal Portfolio" />
-    <meta
-      property="og:description"
-      content="Premium glassmorphism portfolio website for Majid Ansari from Nepal."
-    />
-    <meta property="og:type" content="website" />
-    <title>Majid Ansari | Premium Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+                <h3 class="counter" data-target="12">0</h3>
+                <p>Creative Ideas</p>
+              </div>
+              <div class="stat-card glass">
+                <h3 class="counter" data-target="6">0</h3>
+                <p>Core Skills</p>
+              </div>
+              <div class="stat-card glass">
+                <h3 class="counter" data-target="3">0</h3>
+                <p>Projects Built</p>
+              </div>
+            </div>
+          </div>
 
-    <!-- Loading Screen -->
-    <div class="loader" id="loader" aria-hidden="true">
-      <div class="loader__content glass">
-        <div class="loader__ring"></div>
-        <h2>Majid Ansari</h2>
-        <p>Building a premium experience...</p>
-      </div>
-    </div>
+          <div class="hero__visual reveal delay-1">
+            <div class="profile-card glass floating">
+              <div class="profile-photo">
+                <div class="profile-photo__inner">
+                  <img src="Majid.jpg" alt="Majid Ansari" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
 
-    <!-- Animated Background -->
-    <div class="background-effects" aria-hidden="true">
-      <div class="gradient-orb orb-1"></div>
-      <div class="gradient-orb orb-2"></div>
-      <div class="gradient-orb orb-3"></div>
-      <canvas id="particles-canvas"></canvas>
-    </div>
-
-    <!-- Scroll Progress -->
-    <div class="scroll-progress" id="scrollProgress"></div>
-
-    <!-- Back to Top -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-      ↑
-    </button>
-
-    <header class="site-header" id="top">
-      <nav class="navbar glass container">
-        <a href="#hero" class="brand">
-          <span class="brand__logo">M</span>
-          <span class="brand__text">Majid Ansari</span>
-        </a>
-
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div class="nav-menu" id="navMenu">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
-          <a href="#services">Services</a>
-          <a href="#achievements">Achievements</a>
-          <a href="#testimonials">Testimonials</a>
-          <a href="#contact">Contact</a>
-          <a href="notes.html">Notes</a> 
-          <a href="ppt.html">PPT</a>
-          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
-            <span class="theme-icon">🌙</span>
-          </button>
+                </div>
+              </div>
+              <div class="profile-card__info">
+                <h2>Majid Ansari</h2>
+                <p>Student | Web Developer | AI Enthusiast</p>
+                <div class="social-pills">
+                  <span>Nepal</span>
+                  <span>Available for projects</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </nav>
-    </header>
+      </section>
 
-    <main>
-      <!-- Hero Section --> 
-     <section class="hero section" id="hero">
-        <div class="container hero__grid">
-          <div class="hero__content reveal">
-            <span class="section-badge">Welcome to my portfolio</span>
-            <h1>
-              Hi, I'm <span class="gradient-text">Majid Ansari</span>
-            </h1>
-            <p class="hero__subtitle">
-              Student from Nepal crafting modern digital experiences with code,
-              creativity, and curiosity.
+      <!-- About Section -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-badge">About Me</span>
+            <h2>Turning ideas into elegant, practical web experiences</h2>
+            <p>
+              I am Majid Ansari, student of  grade 11 from kasturi college ithari sunsari nepal 
+              interest in web development, digital creativity, and AI-powered
+              tools. I enjoy learning modern technologies, building responsive
+              interfaces, and solving problems through clean, user-focused design.
             </p>
-            <p class="typing-line">
-              <span id="typedText"></span><span class="cursor">|</span>
-            </p>
+          </div>
 
-            <div class="hero__actions">
-              <a href="#projects" class="btn btn--primary glow">View Projects</a>
-              <a href="#contact" class="btn btn--secondary">Contact Me</a>
-              <a href="#" class="btn btn--ghost" download>Download CV</a>
+          <div class="about__grid">
+            <div class="about__cards reveal">
+              <article class="info-card glass">
+                <h3>Location</h3>
+                <p>bhokraha narsingh 4 sunsari nepal </p>
+              </article>
+              <article class="info-card glass">
+                <h3>Focus</h3>
+                <p>Frontend Development & Creative UI</p>
+              </article>
+              <article class="info-card glass">
+                <h3>Learning</h3>
+                <p>Computer Science, AI Tools, and Productive Workflows</p>
+              </article>
+              <article class="info-card glass">
+                <h3>Goal</h3>
+                <p>To grow into a professional developer building impactful products</p>
+              </article>
             </div>
 
-            <div class="hero__stats">
-              <div class="stat-card glass">
+            <div class="about__text glass reveal delay-1">
+              <h3>Career Goals</h3>
+              <p>
+                My goal is to build high-quality digital products that combine
+                performance, accessibility, and beautiful user experiences. I want
+                to continue improving my development skills, contribute to real-world
+                projects, and explore how AI can make web solutions smarter and more
+                effective.
+              </p>
+              <div class="about__highlights">
+                <div>
+                  <strong>Creative Mindset</strong>
+                  <span>Designing smooth and engaging interfaces</span>
+                </div>
+                <div>
+                  <strong>Continuous Learning</strong>
+                  <span>Always exploring better tools and techniques</span>
+                </div>
+                <div>
+                  <strong>Future Ready</strong>
+                  <span>Focused on modern, deployable web solutions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-badge">Skills</span>
+            <h2>Core strengths that power my work</h2>
+            <p>
+              A blend of design, development, and technology skills helps me craft
+              responsive and engaging web experiences.
+            </p>
+          </div>
+
+          <div class="skills__grid">
+            <div class="skills__list glass reveal">
+              <div class="skill-item" data-progress="92">
+                <div class="skill-item__top"><span>HTML</span><span>92%</span></div>
+                <div class="progress"><div class="progress__bar"></div></div>
+              </div>
+              <div class="skill-item" data-progress="88">
+                <div class="skill-item__top"><span>CSS</span><span>88%</span></div>
+                <div class="progress"><div class="progress__bar"></div></div>
+              </div>
+              <div class="skill-item" data-progress="84">
+                <div class="skill-item__top"><span>JavaScript</span><span>84%</span></div>
+                <div class="progress"><div class="progress__bar"></div></div>
+              </div>
+              <div class="skill-item" data-progress="90">
+                <div class="skill-item__top"><span>Responsive Design</span><span>90%</span></div>
+                <div class="progress"><div class="progress__bar"></div></div>
+              </div>
+              <div class="skill-item" data-progress="80">
+                <div class="skill-item__top"><span>Computer Science</span><span>80%</span></div>
+                <div class="progress"><div class="progress__bar"></div></div>
+              </div>
+              <div class="skill-item" data-progress="86">
+                <div class="skill-item__top"><span>AI Tools</span><span>86%</span></div>
+                <div class="progress"><div class="progress__bar"></div></div>
+              </div>
+            </div>
+
+            <div class="skills__cards reveal delay-1">
+              <article class="mini-card glass">
+                <h3>Frontend Foundation</h3>
+                <p>Semantic structure, clean styling, reusable components, and polished layouts.</p>
+              </article>
+              <article class="mini-card glass">
+                <h3>Responsive Thinking</h3>
+                <p>Optimized experiences for mobile, tablet, laptop, and desktop screens.</p>
+              </article>
+              <article class="mini-card glass">
+                <h3>Smart Workflow</h3>
+                <p>Using modern tools and AI assistance to improve speed, quality, and creativity.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-badge">Projects</span>
+            <h2>Selected work and future ideas</h2>
+            <p>
+              A showcase of current projects, experiments, and ideas that reflect my
+              passion for building professional web experiences.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card glass reveal">
+              <div class="project-card__image gradient-panel">
+                <span>Tech World Nepal</span>
+              </div>
+              <div class="project-card__content">
+                <h3>Tech World Nepal Website</h3>
+                <p>
+                  A modern concept website for a Nepal-focused technology platform,
+                  designed to highlight news, services, and digital innovation.
+                </p>
+                <div class="tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <div class="project-card__actions">
+                  <a href="https://majidhub.netlify.app" target="_blank" class="btn btn--small btn--primary">Live Demo</a>
+<a  href="https://github.com/majidansari56710-wq/Majid-portfolio-" target="_blank" class="btn btn--small btn--ghost">GitHub</a>
+
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card glass reveal delay-1">
+              <div class="project-card__image gradient-panel alt">
+                <span>Portfolio Design</span>
+              </div>
+              <div class="project-card__content">
+                <h3>Portfolio Website</h3>
+                <p>
+                  A premium personal portfolio with glassmorphism styling, animated
+                  sections, strong branding, and responsive layouts.
+                </p>
+                <div class="tags">
+                  <span>UI Design</span><span>Responsive</span><span>SEO</span>
+                </div>
+                <div class="project-card__actions">
+                  <a href="#" class="btn btn--small btn--primary">Live Demo</a>
+                  <a href="#" class="btn btn--small btn--ghost">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card glass reveal delay-2">
+              <div class="project-card__image gradient-panel future">
+                <span>Coming Soon</span>
+              </div>
+              <div class="project-card__content">
+                <h3>Future Projects</h3>
+                <p>
+                  Upcoming ideas include productivity dashboards, educational tools,
+                  creative AI projects, and advanced frontend experiences.
+                </p>
+                <div class="tags">
+                  <span>Innovation</span><span>AI</span><span>Frontend</span>
+                </div>
+                <div class="project-card__actions">
+                  <a href="#contact" class="btn btn--small btn--primary">Discuss Idea</a>
+                  <a href="#" class="btn btn--small btn--ghost">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+     
+ </section><!-- Education Journey Section -->
+<section class="section" id="education">
+  <div class="container">
+    <div class="section-heading reveal">
+      <span class="section-badge">Education</span>
+      <h2>My Education Journey</h2>
+    </div>
+    <div class="glass reveal" style="padding: 30px; text-align: center; border-radius: 16px;">
+      <p style="font-size: 1.1rem; margin-bottom: 20px;">
+        Explore my academic milestones, schools, and educational background.
+      </p>
+      <a href="school-journey.html" class="btn btn--primary">
+        🎓 View Full Journey
+      </a>
+    </div> 
+  </div>
+
+      <!-- Services Section -->
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-badge">Services</span>
+            <h2>Ways I can help bring ideas to life</h2>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card glass reveal">
+              <div class="service-icon">🎨</div>
+              <h3>Website Design</h3>
+              <p>Stylish, modern, and user-friendly website interfaces with premium visual quality.</p>
+            </article>
+            <article class="service-card glass reveal delay-1">
+              <div class="service-icon">💻</div>
+              <h3>Frontend Development</h3>
+              <p>Responsive and interactive frontend implementation using clean HTML, CSS, and JavaScript.</p>
+            </article>
+            <article class="service-card glass reveal delay-2">
+              <div class="service-icon">🧑‍💼</div>
+              <h3>Portfolio Creation</h3>
+              <p>Personal portfolio websites that present skills, projects, and experience professionally.</p>
+            </article>
+            <article class="service-card glass reveal delay-3">
+              <div class="service-icon">🤖</div>
+              <h3>AI Assistance</h3>
+              <p>Practical use of AI tools for content support, faster workflows, and better productivity.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Achievements Section -->
+      <section class="section" id="achievements">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-badge">Achievements</span>
+            <h2>Milestones, certificates, and progress</h2>
+          </div>
+
+          <div class="achievement-grid">
+            <article class="achievement-card glass reveal">
+              <h3>Certificates</h3>
+              <p>Completed learning milestones in web development, digital tools, and technical growth.</p>
+            </article>
+            <article class="achievement-card glass reveal delay-1">
+              <h3>School Projects</h3>
+              <p>Participated in academic and practical projects that improved teamwork and creativity.</p>
+            </article>
+            <article class="achievement-card glass reveal delay-2">
+              <h3>Skill Development</h3>
+              <p>Consistently building stronger coding, design, and AI-assisted workflow skills.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section" id="testimonials">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-badge">Testimonials</span>
+            <h2>Feedback presented with a premium touch</h2>
+            <p>
+              You can replace these sample testimonials with real client, teacher,
+              or peer feedback later.
+            </p>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="testimonial-card glass reveal">
+              <p>
+                “Majid shows strong creativity and a genuine passion for learning
+                modern web technologies.”
+              </p>
+              <div class="testimonial-author">
+                <strong>Teacher / Mentor</strong>
+                <span>Academic Reference</span>
+              </div>
+            </article>
+            <article class="testimonial-card glass reveal delay-1">
+              <p>
+                “His portfolio and design sense reflect dedication, curiosity, and
+                an eye for detail.”
+              </p>
+              <div class="testimonial-author">
+                <strong>Project Collaborator</strong>
+                <span>Team Feedback</span>
+              </div>
+            </article>
+            <article class="testimonial-card glass reveal delay-2">
+              <p>
+                “Majid combines a student mindset with professional ambition,
+                making his work promising and polished.”
+              </p>
+              <div class="testimonial-author">
+                <strong>Peer Review</strong>
+                <span>Creative Community</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-badge">Contact</span>
+            <h2>Let’s connect and build something meaningful</h2>
+            <p>
+              Replace the placeholder details below with your real contact information
+              before deployment.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info glass reveal">
+              <div class="contact-item">
+                <h3>Email</h3>
+                <p><a href="mailto:majidansari56710@gmail.com">majidansari56710@gmail.com</a></p>
+              </div>
+              <div class="contact-item">
+                <h3>Phone</h3>
+                <p><a href="tel:+9779708438616">+977 9708438616</a></p>
+              </div>
+              <div class="contact-item">
+                <h3>Address</h3>
+                <p>bhokraha sunsari, Nepal</p>
+              </div>
+              <div class="contact-map">
+                <iframe
+                  title="Map of Nepal"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114112.59374020993!2d87.08638122394592!3d26.519522108153723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef10320c1f27a1%3A0x866e1c1f2c371c4a!2sBhokraha%20Narsingh!5e0!3m2!1sen!2snp!4v1710000000000!5m2!1sen!2snp"
+loading="lazy"
+
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            <form class="contact-form glass reveal delay-1" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required />
+                <small class="error-message"></small>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                <small class="error-message"></small>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter subject" required />
+                <small class="error-message"></small>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+                <small class="error-message"></small>
+              </div>
+              <button type="submit" class="btn btn--primary glow">Send Message</button>
+              <p class="form-status" id="formStatus"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__grid glass">
+        <div>
+          <h3>Majid Ansari</h3>
+          <p>
+            Student | Web Developer | AI Enthusiast — building modern digital
+            experiences with passion and purpose.
+          </p>
+          <div class="footer__socials">
+            <a href="https://www.facebook.com/share/1EUfkhNFxv/" aria-label="Facebook">FB</a>
+            <a href="https://www.instagram.com/ma_jidx10?igsh=enh2YjhmNHI5MWph" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="LinkedIn">IN</a>
+            <a href="#" aria-label="GitHub">GH</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Deployment Ready</h4>
+          <p>
+            This portfolio is built with clean HTML, CSS, and JavaScript only,
+            making it ideal for GitHub Pages and vercel deployment.
+          </p>
+        </div>
+      </div>
+      <p class="footer__bottom">© <span id="currentYear"></span> Majid Ansari. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
                 <h3 class="counter" data-target="12">0</h3>
                 <p>Creative Ideas</p>
               </div>
